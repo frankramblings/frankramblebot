@@ -5,10 +5,10 @@ Local Settings for a heroku_ebooks account.
 # Configuration for Twitter API
 ENABLE_TWITTER_SOURCES = True # Fetch twitter statuses as source
 ENABLE_TWITTER_POSTING = True # Tweet resulting status?
-MY_CONSUMER_KEY = 'Your Twitter API Consumer Key'
-MY_CONSUMER_SECRET = 'Your Consumer Secret Key'
-MY_ACCESS_TOKEN_KEY = 'Your Twitter API Access Token Key'
-MY_ACCESS_TOKEN_SECRET = 'Your Access Token Secret'
+MY_CONSUMER_KEY = 'He2aP7K2v7MeZZsrLRwj1eRzb'
+MY_CONSUMER_SECRET = '4LweI5GcvIiHba1V08rllzH2NkCHDfMbVuFJ6m9XxtClV8Ft2w'
+MY_ACCESS_TOKEN_KEY = '3511674977-ZXipkUhrllTFUSkGcKPDaUuce8u5gt5La0vQeFu'
+MY_ACCESS_TOKEN_SECRET = 'TlMUt8xhQBt4faERyglIIqXfR9xI4930pWJeXM7V81Gpw'
 
 # Configuration for Mastodon API
 ENABLE_MASTODON_SOURCES = False # Fetch mastodon statuses as a source?
@@ -18,8 +18,8 @@ CLIENT_CRED_FILENAME = '' # the MASTODON client secret file you created for this
 USER_ACCESS_FILENAME = '' # The MASTODON user credential file you created at installation.
 
 # Sources (Twitter, Mastodon, local text file or a web page)
-SOURCE_ACCOUNTS = [""]  # A list of comma-separated, quote-enclosed Twitter handles of account that you'll generate tweets based on. It should look like ["account1", "account2"]. If you want just one account, no comma needed.
-TWITTER_SOURCE_ACCOUNTS = [""]  # A list of comma-separated, quote-enclosed Twitter handles of account that you'll generate tweets based on. It should look like ["account1", "account2"]. If you want just one account, no comma needed.
+SOURCE_ACCOUNTS = ["frankramblings"]  # A list of comma-separated, quote-enclosed Twitter handles of account that you'll generate tweets based on. It should look like ["account1", "account2"]. If you want just one account, no comma needed.
+TWITTER_SOURCE_ACCOUNTS = ["frankramblings"]  # A list of comma-separated, quote-enclosed Twitter handles of account that you'll generate tweets based on. It should look like ["account1", "account2"]. If you want just one account, no comma needed.
 MASTODON_SOURCE_ACCOUNTS = [""] # A list, e.g. ["@user@instance.tld"]
 SOURCE_EXCLUDE = r'^$'  # Source tweets that match this regexp will not be added to the Markov chain. You might want to filter out inappropriate words for example.
 STATIC_TEST = False  # Set this to True if you want to test Markov generation from a static file instead of the API.
@@ -32,5 +32,5 @@ WEB_ATTRIBUTES = [{'class': 'example-text'}, {}] # A list of dictionaries contai
 ODDS = 8  # How often do you want this to run? 1/8 times?
 ORDER = 2  # How closely do you want this to hew to sensical? 2 is low and 4 is high.
 
-DEBUG = True  # Set this to False to start Tweeting live
-TWEET_ACCOUNT = ""  # The name of the account you're tweeting to.
+DEBUG = False  # Set this to False to start Tweeting live
+TWEET_ACCOUNT = "frankramblebot"  # The name of the account you're tweeting to.
